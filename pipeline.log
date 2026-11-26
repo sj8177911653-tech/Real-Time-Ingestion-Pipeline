@@ -1,0 +1,181 @@
+2026-11-15 16:02:49,499 - ERROR - Pipeline Error: no such table: sensor_data
+2026-11-15 16:03:36,775 - ERROR - Pipeline Error: no such table: sensor_data
+2026-11-15 16:04:57,063 - ERROR - Pipeline Error: no such table: sensor_data
+2026-11-15 16:09:33,186 - INFO - Pipeline running successfully. Total records: 8
+INFO:root:Data Quality Check Passed
+2026-11-18 12:04:50,956 - INFO - IO loop starting (client_id=kafka-python-3.0.13)
+2026-11-18 12:04:50,958 - INFO - Attempting bootstrap to bootstrap-0 at localhost:9092 (rack None)
+2026-11-18 12:04:50,959 - INFO - Initializing connection for node_id bootstrap-0 at localhost:9092 (rack=None)
+2026-11-18 12:04:50,997 - INFO - <KafkaTCPTransport [::1:9092<-49617]>: connected to <socket.socket fd=892, family=23, type=1, proto=0, laddr=('::1', 49617, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:04:51,018 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-49617] broker_version=unknown (initializing)>: Broker version identified as 4.1
+2026-11-18 12:04:51,018 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-49617] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:04:51,041 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-18 12:04:51,041 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-18 12:04:51,041 - INFO - Closing bootstrap connection bootstrap-0
+2026-11-18 12:04:51,042 - INFO - <KafkaTCPTransport [::1:9092<-49617]>: Closing transport
+2026-11-18 12:04:51,042 - INFO - <KafkaConnection node_id=bootstrap-0 broker_version=(4, 1) (disconnected)>: Connection closed
+2026-11-18 12:04:51,043 - INFO - Starting metadata refresh loop
+2026-11-18 12:04:51,047 - INFO - Updating subscribed topics to: ('sensor-data',)
+2026-11-18 12:04:51,061 - INFO - Initializing connection for node_id 1 at localhost:9092 (rack=None)
+2026-11-18 12:04:51,063 - INFO - <KafkaTCPTransport [::1:9092<-49618]>: connected to <socket.socket fd=892, family=23, type=1, proto=0, laddr=('::1', 49618, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:04:51,117 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-49618] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:04:51,137 - INFO - Coordinator for GROUP/sensor-drift-handler-v3 is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-11-18 12:04:51,138 - INFO - Discovered coordinator coordinator-1 for group sensor-drift-handler-v3
+2026-11-18 12:04:51,138 - INFO - Initializing connection for node_id coordinator-1 at localhost:9092 (rack=None)
+2026-11-18 12:04:51,140 - INFO - Revoking previously assigned partitions set() for group sensor-drift-handler-v3
+2026-11-18 12:04:51,141 - INFO - <KafkaTCPTransport [::1:9092<-49619]>: connected to <socket.socket fd=896, family=23, type=1, proto=0, laddr=('::1', 49619, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:04:51,142 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:04:51,159 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:04:51,173 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-49619] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:04:51,203 - INFO - Received member id kafka-python-3.0.13-e2f3ecb5-6741-401e-9d9b-8fef33545328 for group sensor-drift-handler-v3; will retry join-group
+2026-11-18 12:04:51,204 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:04:51,213 - INFO - Successfully joined group sensor-drift-handler-v3 <Generation 1 (member_id: kafka-python-3.0.13-e2f3ecb5-6741-401e-9d9b-8fef33545328, protocol: range)>
+2026-11-18 12:04:51,214 - INFO - Elected group leader -- performing partition assignments using range
+2026-11-18 12:04:51,264 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-data', partition=0)]
+2026-11-18 12:04:51,264 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-data', partition=0)} for group sensor-drift-handler-v3
+2026-11-18 12:04:51,291 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:04:51,323 - INFO - Resetting offset for partition TopicPartition(topic='sensor-data', partition=0) to offset 1.
+2026-11-18 12:07:15,741 - INFO - Sensor data saved: {'sensor_id': 'S002', 'temperature': 29.5, 'humidity': 68, 'pressure': 1012.5, 'battery': 85, 'firmware_version': '2.0', 'schema_version': 2, 'timestamp': 1794983835.6014247}
+2026-11-18 12:09:51,758 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:13:49,776 - INFO - Sensor data saved: {'sensor_id': 'S003', 'temperature': 27.0, 'humidity': 60, 'schema_version': 1, 'timestamp': 1794984229.6394117}
+2026-11-18 12:14:52,071 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:16:04,153 - INFO - Pipeline running successfully. Total records: 13
+INFO:root:Data Quality Check Passed
+2026-11-18 12:19:52,268 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:24:52,595 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:29:52,895 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:34:53,052 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:38:07,030 - INFO - IO loop starting (client_id=kafka-python-3.0.13)
+2026-11-18 12:38:07,031 - INFO - Attempting bootstrap to bootstrap-0 at localhost:9092 (rack None)
+2026-11-18 12:38:07,031 - INFO - Initializing connection for node_id bootstrap-0 at localhost:9092 (rack=None)
+2026-11-18 12:38:07,051 - INFO - <KafkaTCPTransport [::1:9092<-58566]>: connected to <socket.socket fd=864, family=23, type=1, proto=0, laddr=('::1', 58566, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:38:07,063 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-58566] broker_version=unknown (initializing)>: Broker version identified as 4.1
+2026-11-18 12:38:07,064 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-58566] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:38:07,078 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-18 12:38:07,078 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-18 12:38:07,079 - INFO - Closing bootstrap connection bootstrap-0
+2026-11-18 12:38:07,079 - INFO - <KafkaTCPTransport [::1:9092<-58566]>: Closing transport
+2026-11-18 12:38:07,080 - INFO - <KafkaConnection node_id=bootstrap-0 broker_version=(4, 1) (disconnected)>: Connection closed
+2026-11-18 12:38:07,080 - INFO - Starting metadata refresh loop
+2026-11-18 12:38:07,084 - INFO - Updating subscribed topics to: ('sensor-data',)
+2026-11-18 12:38:07,086 - INFO - Initializing connection for node_id 1 at localhost:9092 (rack=None)
+2026-11-18 12:38:07,088 - INFO - <KafkaTCPTransport [::1:9092<-58567]>: connected to <socket.socket fd=588, family=23, type=1, proto=0, laddr=('::1', 58567, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:38:07,096 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-58567] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:38:07,102 - INFO - Coordinator for GROUP/sensor-drift-handler-v3 is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-11-18 12:38:07,102 - INFO - Discovered coordinator coordinator-1 for group sensor-drift-handler-v3
+2026-11-18 12:38:07,102 - INFO - Initializing connection for node_id coordinator-1 at localhost:9092 (rack=None)
+2026-11-18 12:38:07,105 - INFO - Revoking previously assigned partitions set() for group sensor-drift-handler-v3
+2026-11-18 12:38:07,105 - INFO - <KafkaTCPTransport [::1:9092<-58568]>: connected to <socket.socket fd=856, family=23, type=1, proto=0, laddr=('::1', 58568, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:38:07,106 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:38:07,117 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-58568] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:38:07,128 - INFO - Received member id kafka-python-3.0.13-700efd12-6fdf-4884-82dc-16c1a394c24e for group sensor-drift-handler-v3; will retry join-group
+2026-11-18 12:38:07,129 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:38:07,191 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:38:08,805 - INFO - Group sensor-drift-handler-v3 is rebalancing; rejoining.
+2026-11-18 12:38:09,053 - INFO - Revoking previously assigned partitions {TopicPartition(topic='sensor-data', partition=0)} for group sensor-drift-handler-v3
+2026-11-18 12:38:09,056 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:38:09,078 - INFO - Successfully joined group sensor-drift-handler-v3 <Generation 2 (member_id: kafka-python-3.0.13-700efd12-6fdf-4884-82dc-16c1a394c24e, protocol: range)>
+2026-11-18 12:38:09,080 - INFO - Successfully joined group sensor-drift-handler-v3 <Generation 2 (member_id: kafka-python-3.0.13-e2f3ecb5-6741-401e-9d9b-8fef33545328, protocol: range)>
+2026-11-18 12:38:09,080 - INFO - Elected group leader -- performing partition assignments using range
+2026-11-18 12:38:09,092 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:38:09,099 - INFO - Updated partition assignment: []
+2026-11-18 12:38:09,099 - INFO - Setting newly assigned partitions set() for group sensor-drift-handler-v3
+2026-11-18 12:38:09,099 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-data', partition=0)]
+2026-11-18 12:38:09,100 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-data', partition=0)} for group sensor-drift-handler-v3
+2026-11-18 12:38:21,684 - INFO - Enriched sensor data saved: {'sensor_id': 'S003', 'temperature': 27.0, 'humidity': 60, 'schema_version': 1, 'timestamp': 1794985701.5319974}
+2026-11-18 12:43:07,437 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:43:09,103 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:48:07,663 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:48:09,119 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:48:42,106 - INFO - Improved Data Quality Check Passed
+2026-11-18 12:52:54,538 - INFO - Data Quality Check Passed
+2026-11-18 12:52:54,538 - INFO - Improved Data Quality Check Passed
+2026-11-18 12:53:08,141 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:53:09,130 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:55:22,857 - INFO - IO loop starting (client_id=kafka-python-3.0.13)
+2026-11-18 12:55:22,858 - INFO - Attempting bootstrap to bootstrap-0 at localhost:9092 (rack None)
+2026-11-18 12:55:22,858 - INFO - Initializing connection for node_id bootstrap-0 at localhost:9092 (rack=None)
+2026-11-18 12:55:22,873 - INFO - <KafkaTCPTransport [::1:9092<-60040]>: connected to <socket.socket fd=736, family=23, type=1, proto=0, laddr=('::1', 60040, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:55:22,882 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-60040] broker_version=unknown (initializing)>: Broker version identified as 4.1
+2026-11-18 12:55:22,883 - INFO - <KafkaConnection node_id=bootstrap-0 host=[::1:9092<-60040] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:55:22,895 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-18 12:55:22,896 - INFO - Bootstrap complete: ClusterMetadata(brokers: 1, topics: 0, coordinators: 0)
+2026-11-18 12:55:22,896 - INFO - Closing bootstrap connection bootstrap-0
+2026-11-18 12:55:22,896 - INFO - <KafkaTCPTransport [::1:9092<-60040]>: Closing transport
+2026-11-18 12:55:22,896 - INFO - <KafkaConnection node_id=bootstrap-0 broker_version=(4, 1) (disconnected)>: Connection closed
+2026-11-18 12:55:22,897 - INFO - Starting metadata refresh loop
+2026-11-18 12:55:22,901 - INFO - Updating subscribed topics to: ('sensor-data',)
+2026-11-18 12:55:22,903 - INFO - Initializing connection for node_id 1 at localhost:9092 (rack=None)
+2026-11-18 12:55:22,905 - INFO - <KafkaTCPTransport [::1:9092<-60041]>: connected to <socket.socket fd=684, family=23, type=1, proto=0, laddr=('::1', 60041, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:55:22,914 - INFO - <KafkaConnection node_id=1 host=[::1:9092<-60041] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:55:22,921 - INFO - Coordinator for GROUP/sensor-drift-handler-v3 is MetadataResponseBroker(node_id='coordinator-1', host='localhost', port=9092, rack=None)
+2026-11-18 12:55:22,921 - INFO - Discovered coordinator coordinator-1 for group sensor-drift-handler-v3
+2026-11-18 12:55:22,922 - INFO - Initializing connection for node_id coordinator-1 at localhost:9092 (rack=None)
+2026-11-18 12:55:22,925 - INFO - Revoking previously assigned partitions set() for group sensor-drift-handler-v3
+2026-11-18 12:55:22,925 - INFO - <KafkaTCPTransport [::1:9092<-60042]>: connected to <socket.socket fd=528, family=23, type=1, proto=0, laddr=('::1', 60042, 0, 0), raddr=('::1', 9092, 0, 0)>
+2026-11-18 12:55:22,928 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:55:22,941 - INFO - <KafkaConnection node_id=coordinator-1 host=[::1:9092<-60042] broker_version=(4, 1) (connected)>: Connected
+2026-11-18 12:55:22,952 - INFO - Received member id kafka-python-3.0.13-920ad8bd-980e-4cff-9651-25a9796a1867 for group sensor-drift-handler-v3; will retry join-group
+2026-11-18 12:55:22,953 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:55:23,007 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:55:23,967 - INFO - Group sensor-drift-handler-v3 is rebalancing; rejoining.
+2026-11-18 12:55:24,161 - INFO - Revoking previously assigned partitions {TopicPartition(topic='sensor-data', partition=0)} for group sensor-drift-handler-v3
+2026-11-18 12:55:24,162 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:55:24,671 - INFO - Group sensor-drift-handler-v3 is rebalancing; rejoining.
+2026-11-18 12:55:24,769 - INFO - Revoking previously assigned partitions set() for group sensor-drift-handler-v3
+2026-11-18 12:55:24,770 - INFO - (Re-)joining group sensor-drift-handler-v3
+2026-11-18 12:55:24,779 - INFO - Successfully joined group sensor-drift-handler-v3 <Generation 3 (member_id: kafka-python-3.0.13-700efd12-6fdf-4884-82dc-16c1a394c24e, protocol: range)>
+2026-11-18 12:55:24,780 - INFO - Successfully joined group sensor-drift-handler-v3 <Generation 3 (member_id: kafka-python-3.0.13-920ad8bd-980e-4cff-9651-25a9796a1867, protocol: range)>
+2026-11-18 12:55:24,781 - INFO - Successfully joined group sensor-drift-handler-v3 <Generation 3 (member_id: kafka-python-3.0.13-e2f3ecb5-6741-401e-9d9b-8fef33545328, protocol: range)>
+2026-11-18 12:55:24,781 - INFO - Elected group leader -- performing partition assignments using range
+2026-11-18 12:55:24,792 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 12:55:24,799 - INFO - Updated partition assignment: []
+2026-11-18 12:55:24,799 - INFO - Updated partition assignment: [TopicPartition(topic='sensor-data', partition=0)]
+2026-11-18 12:55:24,799 - INFO - Setting newly assigned partitions set() for group sensor-drift-handler-v3
+2026-11-18 12:55:24,800 - INFO - Setting newly assigned partitions {TopicPartition(topic='sensor-data', partition=0)} for group sensor-drift-handler-v3
+2026-11-18 12:55:24,807 - INFO - Updated partition assignment: []
+2026-11-18 12:55:24,807 - INFO - Setting newly assigned partitions set() for group sensor-drift-handler-v3
+2026-11-18 12:55:36,823 - INFO - Enriched sensor data saved: {'sensor_id': 'S003', 'temperature': 27.0, 'humidity': 60, 'schema_version': 1, 'timestamp': 1794986736.6919785}
+2026-11-18 12:58:08,552 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:00:23,020 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:00:24,797 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:03:08,739 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:05:23,032 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:05:24,812 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:08:09,027 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:10:23,051 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:10:24,820 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:13:09,321 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:15:23,059 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:15:24,849 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:18:09,542 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:20:23,065 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:20:24,862 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:23:09,909 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:25:23,075 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:25:24,875 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:28:10,142 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:30:23,094 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:30:24,883 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:33:10,361 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:35:23,099 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:35:24,887 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:38:10,774 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:40:23,114 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:40:24,900 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:43:11,001 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:45:23,133 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:45:24,908 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:48:11,088 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:50:23,148 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:50:24,914 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:53:11,223 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:55:23,162 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:55:24,929 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 13:58:11,505 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 14:00:23,194 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 14:00:24,968 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 14:03:11,912 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 14:05:23,198 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 14:05:24,973 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)
+2026-11-18 14:08:11,974 - INFO - Updated metadata: ClusterMetadata(brokers: 1, topics: 1, coordinators: 1)

@@ -1,0 +1,25 @@
+[
+    {
+        "device_id": "S101",
+        "temperature": 30,
+        "humidity": 60
+    },
+    {
+        "device_id": "S102",
+        "temperature": 32,
+        "humidity": 65
+    },
+    {
+        "device_id": "S103",
+        "temperature": 29,
+        "humidity": 58,
+        "pressure": 100
+    },
+    {
+        "device_id": "S104",
+        "temperature": 35,
+        "humidity": 70,
+        "pressure": 105,
+        "battery": 90
+    }
+]
